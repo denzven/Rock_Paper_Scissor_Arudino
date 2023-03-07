@@ -1,5 +1,5 @@
-#include "HardwareSerial.h"
 // Music.cpp
+#include "HardwareSerial.h"
 #include "Music.h"
 #include "pitches.h"
 
@@ -44,7 +44,7 @@ void Music::startUp() {
 
 // Happy Victorious Jingle when player wins
 void Music::win() {
-  Serial.println("win");
+  Serial.println("-----Win------");
 
   int melody[] = {
     NOTE_C7,NOTE_C7,NOTE_C7,NOTE_C7,NOTE_G7
@@ -77,7 +77,7 @@ void Music::win() {
 
 // sad tune when player loses
 void Music::lose() {
-  Serial.println("lose");
+  Serial.println("-----Lose-----");
 
   int melody[] = {
     NOTE_C4,NOTE_C4
@@ -110,7 +110,7 @@ void Music::lose() {
 
 // meh tune when draw
 void Music::draw() {
-  Serial.println("draw");
+  Serial.println("-----Draw-----");
 
   int melody[] = {
     NOTE_C6

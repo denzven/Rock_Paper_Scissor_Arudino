@@ -1,6 +1,17 @@
+//Btn.cpp
+
+// Include Libraries
+#include "Arduino.h"
 #include "HardwareSerial.h"
-// LED.cpp
 #include "Btn.h"
 
+// Set of functions for Btn Onject during game
+Btn::Btn(int pin) {
+  BtnPin = pin;
+  pinMode(BtnPin, INPUT_PULLUP);
+};
 
-// Set of functions for Btn during game
+// Checks if pressed btn state is true or not
+bool Btn::press(){
+  return digitalRead(BtnPin) == LOW;
+};

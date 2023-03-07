@@ -1,4 +1,4 @@
-// Music.h
+// Btn.h
 #ifndef Btn_h
 #define Btn_h
 
@@ -6,7 +6,10 @@
 
 class Btn {
   private:
+    int BtnPin;
   public:
+    Btn(int pin);
+    bool press();
 };
 
 #endif

@@ -126,7 +126,7 @@ void loop() {
     // Choices ==> 1=Rock,2=Paper,3=Scissors
     // Appropriate Music plays for the scores
     if (PlayerChoice == 1 && ArduinoChoice == 1){Music.draw();};
-    if (PlayerChoice == 1 && ArduinoChoice == 2){Music.lose();};
+    if (PlayerChoice == 1 && ArduinoChoice == 2){ArduinoScore++;Music.lose();};
     if (PlayerChoice == 1 && ArduinoChoice == 3){PlayerScore++;Music.win();};
     if (PlayerChoice == 2 && ArduinoChoice == 1){PlayerScore++;Music.win();};
     if (PlayerChoice == 2 && ArduinoChoice == 2){Music.draw();};
